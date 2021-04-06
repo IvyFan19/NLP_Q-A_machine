@@ -126,6 +126,16 @@ class FAESM:
         print("*********************List**************************************")
         self.log("BERT Candidates List: {}".format(len(self._bert_candidates)))
         self.log("ALL BERT Candidates List: {}".format(self._bert_candidates))
+        self._new_bert()
+
+    def _new_bert(self):
+        print("===== New Bert =======")
+        import torch
+        from transformers import BertForQuestionAnswering
+        # print(data['data'][0]['paragraphs'][0]['qas'][0]['question'] = query)
+        print("[ORIGINAL QUERY]: " + self._original_q)
+        print(self._bert_candidates)
+
 
     def _prepare_significant_query_terms(self):
         self._all_significant_queries_terms = set()
@@ -486,9 +496,9 @@ class FAESM:
         return candidates
 
     def _new_selection_strategy(self, candidates):
-        print("**************CANDI************")
-        print(candidates)
-        print("======")
+        # print("**************CANDI************")
+        # print(candidates)
+        # print("======")
          
         for index, candidate in enumerate(candidates):
             candidate_score = candidate[0]

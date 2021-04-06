@@ -1,76 +1,76 @@
 {
     "@context": {
-        "detailedDescription": "goog:detailedDescription",
-        "goog": "http://schema.googleapis.com/",
-        "@vocab": "http://schema.org/",
-        "EntitySearchResult": "goog:EntitySearchResult",
         "resultScore": "goog:resultScore",
-        "kg": "http://g.co/kg"
+        "@vocab": "http://schema.org/",
+        "detailedDescription": "goog:detailedDescription",
+        "kg": "http://g.co/kg",
+        "goog": "http://schema.googleapis.com/",
+        "EntitySearchResult": "goog:EntitySearchResult"
     },
     "@type": "ItemList",
     "itemListElement": [
         {
             "resultScore": 7.253788471221924,
             "result": {
-                "detailedDescription": {
-                    "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
-                    "url": "https://en.wikipedia.org/wiki/Russia",
-                    "articleBody": "Russia, or the Russian Federation, is a transcontinental country spanning Eastern Europe and Northern Asia. It is the largest country in the world; covering over 17,125,191 square kilometres, consisting of more than one-eighth of the Earth's inhabited land area, extending to eleven time zones, and has borders with sixteen sovereign nations. "
-                },
-                "description": "Country",
-                "name": "Russia",
                 "@id": "kg:/m/06bnz",
+                "description": "Country",
+                "url": "http://www.gov.ru/",
                 "@type": [
-                    "Country",
                     "AdministrativeArea",
                     "Place",
+                    "Country",
                     "Thing"
                 ],
-                "url": "http://www.gov.ru/"
+                "detailedDescription": {
+                    "url": "https://en.wikipedia.org/wiki/Russia",
+                    "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+                    "articleBody": "Russia, or the Russian Federation, is a transcontinental country spanning Eastern Europe and Northern Asia. It is the largest country in the world; covering over 17,125,191 square kilometres, consisting of more than one-eighth of the Earth's inhabited land area, extending to eleven time zones, and has borders with sixteen sovereign nations. "
+                },
+                "name": "Russia"
             },
             "@type": "EntitySearchResult"
         },
         {
             "resultScore": 2.711291790008545,
-            "@type": "EntitySearchResult",
             "result": {
-                "detailedDescription": {
-                    "url": "https://en.wikipedia.org/wiki/Russian_Post",
-                    "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
-                    "articleBody": "Russian Post is an Aktsionernoye Obschestvo which is the national postal operator of Russia. The company is responsible for the delivery of mail in Russia, and the issuing of postage stamps. "
-                },
+                "url": "http://www.russianpost.ru",
+                "description": "Mail company",
                 "name": "Russian Post",
                 "@id": "kg:/m/0b7471",
-                "@type": [
-                    "Organization",
-                    "Corporation",
-                    "Thing"
-                ],
-                "description": "Mail company",
-                "url": "http://www.russianpost.ru"
-            }
-        },
-        {
-            "@type": "EntitySearchResult",
-            "resultScore": 2.492598533630371,
-            "result": {
                 "detailedDescription": {
-                    "articleBody": "Moscow is the capital and largest city of Russia. The city stands on the Moskva River in Central Russia, with a population estimated at 12.4 million residents within the city limits, while over 17 million residents in the urban area, and over 20 million residents in the Moscow Metropolitan Area. ",
-                    "url": "https://en.wikipedia.org/wiki/Moscow",
+                    "articleBody": "Russian Post is an Aktsionernoye Obschestvo which is the national postal operator of Russia. The company is responsible for the delivery of mail in Russia, and the issuing of postage stamps. ",
+                    "url": "https://en.wikipedia.org/wiki/Russian_Post",
                     "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License"
                 },
-                "name": "Moscow",
-                "@id": "kg:/m/04swd",
                 "@type": [
+                    "Corporation",
+                    "Thing",
+                    "Organization"
+                ]
+            },
+            "@type": "EntitySearchResult"
+        },
+        {
+            "resultScore": 2.492598533630371,
+            "result": {
+                "@id": "kg:/m/04swd",
+                "name": "Moscow",
+                "url": "http://www.mos.ru",
+                "description": "Capital of Russia",
+                "detailedDescription": {
+                    "url": "https://en.wikipedia.org/wiki/Moscow",
+                    "license": "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+                    "articleBody": "Moscow is the capital and largest city of Russia. The city stands on the Moskva River in Central Russia, with a population estimated at 12.4 million residents within the city limits, while over 17 million residents in the urban area, and over 20 million residents in the Moscow Metropolitan Area. "
+                },
+                "@type": [
+                    "City",
                     "Cemetery",
                     "AdministrativeArea",
-                    "City",
                     "Place",
                     "Thing"
-                ],
-                "url": "http://www.mos.ru",
-                "description": "Capital of Russia"
-            }
+                ]
+            },
+            "@type": "EntitySearchResult"
         }
     ]
 }
